@@ -7,5 +7,114 @@
 
 body {
   height: 100vh;
+  background-color: #300540;
   -webkit-font-smoothing: antialiased;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 64px;
+}
+
+.agil-logo {
+  max-width: 250px;
+}
+
+form {
+  margin-top: 24px;
+
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form label {
+  color: white;
+}
+
+form .section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+form .section input {
+  padding: 8px;
+  font-size: 16px;
+  padding-left: 40px;
+  border: none;
+  border-radius: 8px;
+}
+
+form .section input:focus {
+  outline: solid 3px #ffd000;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  left: 8px;
+}
+
+.buttons {
+  margin: 32px 0px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+
+  font-weight: bold;
+  color: black;
+  background-color: #f5d029;
+
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.button:hover {
+  background-color: #b99a0e;
+}
+
+.googleButton {
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.googleButton:hover {
+  background-color: rgb(187, 187, 187);
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.473);
+  text-align: center;
+}
+
+.footer a {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.76);
 }
