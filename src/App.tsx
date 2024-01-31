@@ -37,7 +37,7 @@ export function App() {
           <label htmlFor="user">Usuário:</label>
           <div className="input-box">
             <UserRound className="icon" color="black" />
-            <input type="text" name="user" id="user" />
+            <input type="text" name="user" id="user" placeholder="Usuário" />
           </div>
 
         </div>
@@ -45,17 +45,17 @@ export function App() {
           <label htmlFor="password">Senha:</label>
           <div className="input-box">
             <KeyRound className="icon" color="black" />
-            <input type="password" name="password" id="password" />
+            <input type="password" name="password" id="password" placeholder="Senha" />
           </div>
         </div>
 
         <div className="buttons">
+          <button className="button" type="submit">Entrar</button>
+          <button type="button" onClick={handleFormSignUp} className="button">Efetuar cadastro</button>
           <button onClick={handleGoogleAuth} type="button" className="button googleButton">
             Entrar pelo Google
             <img width={18} src={googleIcon} alt="" />
           </button>
-          <button className="button" type="submit">Entrar</button>
-          <button type="button" onClick={handleFormSignUp} className="button">Efetuar cadastro</button>
         </div>
       </form>
 

@@ -103,6 +103,7 @@ form .section input:focus {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  margin-top: 16px;
 }
 
 .googleButton:hover {
